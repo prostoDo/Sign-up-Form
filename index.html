@@ -4,7 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up-Form</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="left">
+        <h1 class="title">The ODIN</h1>
+        <div class="title_back"></div>
+        <img
+          class="logo"
+          src="/images/odin-lined.png"
+          alt="odin-logo"
+          width="100px"
+          height="130px"
+        />
+      </section>
+      <div class="form_border"></div>
+
+      <section class="right">
+        <div class="about">
+          <p class="description">
+            This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Necessitatibus, commodi! Sign up now to get started.
+          </p>
+          <p class="description_add">You know you want to.</p>
+          <h3>Let`s do this!</h3>
+          <form action="" id="sign_form" class="sign_form" method="post">
+            <div class="form_name">
+              <label for="">FIRST NAME</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form_surname">
+              <label for="">LAST NAME</label>
+              <input type="text" id="surname" name="surname" required />
+            </div>
+
+            <div class="form_email">
+              <label for="">EMAIL</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form_phone">
+              <label for="">PHONE NUMBER</label>
+              <input type="number" id="phone" name="phone" />
+            </div>
+            <div class="form_password">
+              <label for="">PASSWORD</label>
+              <input type="password" id="password" required />
+            </div>
+
+            <div class="form_confirm_password">
+              <label for="number">CONFIRM PASSWORD
+              </label>
+              <input type="password" id="password2" required />
+            </div>
+          </form>
+          <button type="submit" form="sign_form">Create Account</button>
+        </div>
+        <footer>
+          <h2>Already have an account? <a href="https://fastfounder.ru/">Log in</a></h2>
+        </footer>
+      </section>
+    </main>
+  </body>
 </html>
