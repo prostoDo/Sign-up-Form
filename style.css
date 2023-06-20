@@ -1,5 +1,10 @@
+* {
+  font-family: PT Sans, Georgia, 'Times New Roman', Times, serif;
+}
 main {
   display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
 .left {
@@ -8,88 +13,80 @@ main {
   background-image: url('/images/photo-1668960712327-8c809580cd1b.avif');
 }
 
-.title_back {
-  position: relative;
-  top: 270px;
-  opacity: 0.5;
-  background-color: black;
-  padding: 80px;
-}
-
 .title {
+  background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  top: 380px;
-  left: 450px;
-  font-size: 60px;
-  color: white;
-  z-index: 2;
+  top: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+  padding: 15px 0;
 }
 
-.logo {
-  position: absolute;
-  left: 330px;
-  top: 345px;
+h1 {
+  color: white;
+  font-size: 60px;
 }
+/* /////////////////////////////////////////*/
 
 .right {
   display: flex;
   flex-direction: column;
   width: 60vw;
-  height: 100%;
-  /* background-color: rgb(21, 20, 20); */
-  margin-top: 80px;
-  margin-left: 80px;
-  z-index: 1;
+  height: 100vh;
+  justify-content: center;
+  background-color: antiquewhite;
+  
 }
 
-.description {
+.about {
   font-size: 40px;
   font-weight: 600;
   width: 1200px;
   margin-bottom: 100px;
+  padding-left: 3vw;
 }
 
 .description_add {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 150px;
+  margin: 40px 0 80px;
 }
 h3 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 40px;
+  width: 100%;
 }
 
-.sign_form {
+.form {
+  padding-left: 3vw;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgb(250, 235, 215);
+  box-shadow: 0 10px 20px -2px rgb(228, 201, 166);
 }
 
-.form_border{
-  position: absolute;
-  width: 1415px;
-  height: 340px;
-  background-color: rgb(246, 246, 246);
-  right:0;
-  top:460px;
-  box-shadow: 0px 10px rgb(244, 243, 243);
-}
-
-label{
+label {
   display: block;
 }
 input {
   width: 500px;
-  height: 27px;
+  height: 35px;
   border-radius: 5px;
   font-size: 20px;
-  outline: none;
+  border: none;
+  background-color: rgb(219, 197, 168);
 }
 
 input:focus {
-  outline-color: rgb(225, 156, 67);
+  outline: none;
+  border-bottom: 1px solid  rgb(74, 73, 73);
+}
+.button{
+ padding-left: 3vw; 
 }
 
 button {
@@ -102,6 +99,13 @@ button {
   margin-bottom: 40px;
 }
 
+button:hover{
+background-color: rgb(210, 128, 21);
+}
+
+footer{
+  padding-left:3vw ;
+}
 
 h2 {
   font-size: 25px;
@@ -109,4 +113,9 @@ h2 {
 a {
   color: rgb(225, 156, 67);
   text-decoration: none;
+}
+
+a:hover{
+  color: rgb(210, 128, 21);
+  border-bottom: 1px solid black;
 }

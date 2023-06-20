@@ -4,33 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up-Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <section class="left">
-        <h1 class="title">The ODIN</h1>
-        <div class="title_back"></div>
-        <img
-          class="logo"
-          src="/images/odin-lined.png"
-          alt="odin-logo"
-          width="100px"
-          height="130px"
-        />
+        <div class="title">
+          <img
+            class="logo"
+            src="/images/odin-lined.png"
+            alt="odin-logo"
+            width="100px"
+            height="130px"
+          />
+          <h1>The ODIN</h1>
+        </div>
       </section>
-      <div class="form_border"></div>
 
       <section class="right">
         <div class="about">
           <p class="description">
             This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Necessitatibus, commodi! Sign up now to get started.
+            elit. Necessitatibus, commodi!
           </p>
-          <p class="description_add">You know you want to.</p>
-          <h3>Let`s do this!</h3>
-          <form action="" id="sign_form" class="sign_form" method="post">
+          <p>Sign up now to get started.</p>
+          <p class="description_add">You <em>know</em> you want to.</p>
+        </div>
+
+        <form action="" id="sign_form" class="sign_form" method="post">
+          <div class="form">
+            <h3>Let`s do this!</h3>
             <div class="form_name">
               <label for="">FIRST NAME</label>
               <input type="text" id="name" name="name" required />
@@ -54,13 +64,13 @@
             </div>
 
             <div class="form_confirm_password">
-              <label for="number">CONFIRM PASSWORD
-              </label>
+              <label for="number">CONFIRM PASSWORD </label>
               <input type="password" id="password2" required />
             </div>
-          </form>
-          <button type="submit" form="sign_form">Create Account</button>
-        </div>
+          </div>
+          <div class="button"><button type="submit" form="sign_form">Create Account</button></div>
+        </form>
+
         <footer>
           <h2>Already have an account? <a href="https://fastfounder.ru/">Log in</a></h2>
         </footer>
